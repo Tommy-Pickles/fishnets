@@ -157,6 +157,17 @@
       history.replaceState(null, '', '#home');
     });
   }
+
+  // Scroll to top on page load (unless there's a hash in the URL)
+  if (!window.location.hash || window.location.hash === '#home') {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    // Also handle browser back/forward navigation
+    window.addEventListener('pageshow', function(event) {
+      if (!window.location.hash || window.location.hash === '#home') {
+        window.scrollTo({ top: 0, behavior: 'instant' });
+      }
+    });
+  }
 })();
 
 
