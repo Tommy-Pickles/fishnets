@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fish Nets Take Away</title>
+    <meta name="description" content="Simple small business website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Call bar / Top nav -->
+    <div id="call-bar" class="call-bar" role="region" aria-label="Top navigation">
+      <div class="container callbar-inner">
+        <a id="logo-link" class="logo" href="#home" aria-label="Home">
+          <img id="logo-image" src="" alt="Logo" class="logo-img" />
+          <span id="business-name" class="logo-text"></span>
+        </a>
+        <nav class="top-nav" aria-label="Primary">
+          <a href="#about" class="top-link">About</a>
+          <a href="#menu" class="top-link">Menu</a>
+          <a href="#reviews" class="top-link">Reviews</a>
+          <a href="#contact" class="top-link">Contact</a>
+        </nav>
+        <!-- Socials will be injected by JS only if configured -->
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="header-actions"></div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main id="home">
+      <!-- Hero / About -->
+      <section id="about" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <h1 id="headline" class="headline"></h1>
+            <p id="tagline" class="tagline"></p>
+            <p id="hours-summary" class="hours-summary"></p>
+            <div class="hero-actions">
+              <a id="cta-contact" class="btn primary" href="#contact">Contact Us</a>
+              <a id="cta-directions" class="btn" href="#" target="_blank" rel="noopener">Get Directions</a>
+              <a id="cta-menu" class="btn" href="#menu">Menu</a>
+            </div>
+          </div>
+          <figure class="hero-media">
+            <img id="cover-image" src="" alt="Cover image" class="cover-img" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- Menu Section with subsections -->
+      <section id="menu" class="section">
+        <div class="container">
+          <h2>Menu</h2>
+          <div class="menu-quicknav" role="navigation" aria-label="Menu sections">
+            <a class="pill" href="#menu-fried-food">Fried Food</a>
+            <a class="pill" href="#menu-burgers">Burgers</a>
+            <a class="pill" href="#menu-mammoth-burgers">Mammoth Burgers</a>
+            <a class="pill" href="#menu-salads">Salads</a>
+            <a class="pill" href="#menu-value-deals">Value Meal Deals</a>
+            <a class="pill" href="#menu-kids-deals">Kids Meal Deals</a>
+            <a class="pill" href="#menu-family-platter">Family Platter</a>
+            <a class="pill" href="#menu-extras">Extras</a>
+          </div>
+          <h3 id="menu-fried-food" class="menu-heading">Fried Food</h3>
+          <div class="menu-container"></div>
+          <h3 id="menu-burgers" class="menu-heading">Burgers</h3>
+          <div class="menu-container"></div>
+          <h3 id="menu-mammoth-burgers" class="menu-heading">Mammoth Burgers</h3>
+          <div class="menu-container"></div>
+          <h3 id="menu-salads" class="menu-heading">Salads</h3>
+          <div class="menu-container"></div>
+          <h3 id="menu-value-deals" class="menu-heading">Value Meal Deals</h3>
+          <div class="menu-container"></div>
+          <h3 id="menu-kids-deals" class="menu-heading">Kids Meal Deals</h3>
+          <div class="menu-container"></div>
+          <h3 id="menu-family-platter" class="menu-heading">Family Finger Food Platter</h3>
+          <div class="menu-container"></div>
+          <h3 id="menu-extras" class="menu-heading">Extras</h3>
+          <div class="menu-container"></div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact</h2>
+          <div class="contact-card">
+            <div class="contact-grid">
+              <a id="btn-address" class="btn contact" href="#" target="_blank" rel="noopener">
+                <span class="btn-label">Address</span>
+                <span id="btn-address-text" class="btn-value"></span>
+              </a>
+              <a id="btn-email" class="btn contact" href="#">
+                <span class="btn-label">Email</span>
+                <span id="btn-email-text" class="btn-value"></span>
+              </a>
+              <a id="btn-phone" class="btn contact" href="#">
+                <span class="btn-label">Call</span>
+                <span id="btn-phone-text" class="btn-value"></span>
+              </a>
+            </div>
+            <div class="hours-card">
+              <div class="hours-title">Opening Hours</div>
+              <div id="contact-hours" class="hours"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews Section -->
+      <section id="reviews" class="section">
+        <div class="container">
+          <h2>Reviews</h2>
+          <div id="reviews-summary" class="reviews-summary"></div>
+          <div id="reviews-list" class="reviews-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small id="footer-text">© <span id="year"></span> <span id="footer-business-name"></span>. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <!-- Floating Call Button -->
+    <a id="floating-call" class="fab-call" href="#" aria-label="Call">
+      <span class="call-emoji">📞</span>
+      <span class="call-text">Call</span>
+    </a>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+  </html>
+
+
+
